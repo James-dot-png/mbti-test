@@ -1,0 +1,68 @@
+body {
+  font-family: 'Microsoft YaHei', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.progress {
+  height: 100%;
+  background: #40a9ff;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  background: #1890ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  margin: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #096dd9;
+}
+
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin: 10px 0;
+  background: #f8f9fa;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  min-height: 60px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.option-btn:hover {
+  border-color: #40a9ff;
+  background: #e6f7ff;
+}

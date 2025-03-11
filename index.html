@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>MBTI性格测试</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container" id="difficulty-selection">
+      <h1>请选择测试难度</h1>
+      <button class="btn" onclick="selectDifficulty('simple')">普通版（20题）</button>
+      <button class="btn" onclick="selectDifficulty('medium')">中等版（40题）</button>
+      <button class="btn" onclick="selectDifficulty('advanced')">复杂版（60题）</button>
+    </div>
+
+    <div class="container hidden" id="question-container">
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <h2 id="question-text"></h2>
+      <div class="options">
+        <div class="options-row">
+          <button class="option-btn" onclick="selectOption(0)"></button>
+          <button class="option-btn" onclick="selectOption(1)"></button>
+        </div>
+        <button class="btn prev-btn" onclick="previousQuestion()">上一题</button>
+      </div>
+    </div>
+
+    <div class="container hidden" id="result-container">
+      <h2>你的MBTI类型是：<span id="mbti-type"></span></h2>
+      <div class="analysis-grid">
+  <div class="analysis-section">
+    <h3>类型特征</h3>
+    <ul id="type-features"></ul>
+  </div>
+  <div class="analysis-section">
+    <h3>适合职业</h3>
+    <ul id="type-careers"></ul>
+  </div>
+  <div class="analysis-section">
+    <h3>代表人物</h3>
+    <ul id="type-representatives"></ul>
+  </div>
+  <div class="analysis-section">
+    <h3>优缺点</h3>
+    <div class="pros-cons">
+      <div>
+        <h4>优势</h4>
+        <ul id="type-strengths"></ul>
+      </div>
+      <div>
+        <h4>不足</h4>
+        <ul id="type-weaknesses"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="result-btns">
+        <button class="btn" onclick="location.reload()">重新测试</button>
+        <button class="btn" onclick="showDifficultySelection()">返回重选难度</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
